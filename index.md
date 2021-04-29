@@ -72,7 +72,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
-  <p>Workshop registration will open 10 AM on Wed April 28, 2021.
+  <p>Workshop registration will open 10 AM on Fri April 30, 2021.
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
