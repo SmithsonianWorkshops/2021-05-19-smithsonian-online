@@ -72,12 +72,13 @@ displayed if the 'eventbrite' field in the header is not set.
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
-  <p>Workshop registration will open 10 AM on Fri April 30, 2021.
+  <p>Early Enrollment registration will open 10 AM on Fri April 30, 2021 for members of the <a target='_blank' href='https://si-listserv.si.edu/cgi-bin/wa?SUBED1=CARPENTRIES-ANNOUNCE&A=1'>carpentries-announce listserv</a>.</p>
+  <p>General Admission registration for Smithsonian badgeholders will open on Wednesday, May 5, at 10 AM EDT.</p>
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
-  height="280px"
+  height="350px"
   scrolling="auto">
 </iframe>
 {% endif %}
