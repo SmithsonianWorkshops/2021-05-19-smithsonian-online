@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Intro</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+## Spring 2021 
+# Quarterly Data Carpentry Workshop
+
+![SI Carpentries](images/si_carpentries.png)
+</script></section><section  data-markdown><script type="text/template">
+Before we start...
+
+## Code of Conduct
+
+*We are dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity.*
+</script></section><section  data-markdown><script type="text/template">
+## Code of Conduct
+
+https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
+
+* Go to Instructors or Helpers if you feel the Code of Conduct is being violated.
+
+* There is also a big blue "Report a Code of Conduct Incident" on the course website if you feel the Instructors are not handling appropriately.
+</script></section><section  data-markdown><script type="text/template">
+## What is The Carpentries?
+
+https://carpentries.org/
+
+The Carpentries is a global volunteer-driven organization dedicated to teaching computational skills to researchers and anyone who works with data.
+</script></section><section  data-markdown><script type="text/template">
+## Carpentries at the Smithsonian
+
+https://datascience.si.edu/carpentries
+
+The Smithsonian Carpentries Team is made up of Smithsonian staff and fellows from around the Institution.
+</script></section><section  data-markdown><script type="text/template">
+## Introductions
+
+### *Instructors and Helpers*
+</script></section><section  data-markdown><script type="text/template">
+## Introductions
+
+### *Learners*
+</script></section><section  data-markdown><script type="text/template">
+## Carpentries way of teaching
+
+Code along, rather than lecturing from PowerPoint, or just demonstrating
+
+Odds of running into an error are high, but don’t panic – this is a great opportunity to learn
+</script></section><section  data-markdown><script type="text/template">
+### We won’t leave you behind
+
+We'll use the "yes" / "no" buttons in the Zoom Reactions or Participants panel.
+
+![Zoom Yes No](images/zoom_screenshot.png)
+</script></section><section  data-markdown><script type="text/template">
+## How to ask questions
+
+The Instructors will try to build in time between lessons to ask questions, but use the Zoom chat for questions that come up during a lesson.
+
+![Zoom Question](images/zoom_chat.png)
+</script></section><section  data-markdown><script type="text/template">
+## Course website and EtherPad
+
+https://smithsonianworkshops.github.io/2021-05-19-smithsonian-online
+
+https://pad.carpentries.org/2021-05-19-smithsonian-online
+
+A collaborative document – think of it as a stripped-down version of Google Docs
+</script></section><section  data-markdown><script type="text/template">
+## Zoom problems?
+
+If you are unable to join the Zoom, please put a message on the EtherPad chat
+</script></section><section  data-markdown><script type="text/template">
+## Your first challenge
+
+* Go to the EtherPad
+
+* Add your name, unit, and your favorite dessert under Attendance Day 1
+
+* Set the "yes" checkbox reaction in Zoom
+</script></section><section  data-markdown><script type="text/template">
+## What we will be teaching in this workshop
+
+We will be teaching you data organization, cleaning, and visualization skills, so that your analyses can be easily understood and reproduced by your colleagues ... and *your future self*.
+</script></section><section  data-markdown><script type="text/template">
+## Day One (Today)
+
+### Tidy Data Principles in Spreadsheets
+### OpenRefine
+
+## Day Two (Tomorrow)
+
+### SQL database language
+</script></section><section  data-markdown><script type="text/template">
+## Days Three and Four
+## (next Wed and Thur)
+
+### R and RStudio
+### Working with data files
+### Visualizing data with ggplot2
+</script></section><section  data-markdown><script type="text/template">
+> We will be teaching you skills on a demo dataset, but to really add them to your *toolbag* you need to work through them on your own data.
+</script></section><section  data-markdown><script type="text/template">
+![Fake Book Cover](images/changing_stuff.jpg)</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
